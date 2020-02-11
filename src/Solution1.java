@@ -1,5 +1,14 @@
-
+/**
+ * Brute force for the first google foobar challenge.
+ */
 public class Solution1 {
+
+    /**
+     * Returns a solution for the problem.
+     * @param x The first array.
+     * @param y The second array.
+     * @return The number not common in both arrays.
+     */
     public static int solution(int[] x, int[] y) {
 
         if(x.length > y.length)
@@ -27,7 +36,12 @@ public class Solution1 {
 
     }
 
-    //Inefficient
+    /**
+     * Searches for a value in a given array.
+     * @param arr The array to search.
+     * @param num The number to search for.
+     * @return true if the number is found, else false.
+     */
     private static boolean contains(int[] arr, int num)
     {
         for(int i = 0; i < arr.length; i++)
@@ -38,7 +52,10 @@ public class Solution1 {
         return false;
     }
 
-    //Short test
+    /**
+     * Tester method.
+     * @param args Arguments
+     */
     public static void main(String[] args)
     {
         int[] x = {13, 5, 6, 2, 5};
